@@ -1,3 +1,5 @@
+package src;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -42,7 +44,7 @@ public class ROT13Test {
         // When
         ROT13 cipher = new ROT13();
         String actual = cipher.rotate(s1, 'N');
-        System.out.println(s1);
+//        System.out.println(s1);
         System.out.println(actual);
         // Then
         assertTrue(actual.equals(s2));
